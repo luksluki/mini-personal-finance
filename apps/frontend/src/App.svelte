@@ -243,7 +243,7 @@
           {#if pieData()}
             <div class="h-64 flex justify-center">
               <Pie 
-                data={pieData()} 
+                data={pieData()!} 
                 options={{ maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#cbd5e1' } } } }} 
               />
             </div>
@@ -263,7 +263,7 @@
           {#if barData()}
             <div class="h-64">
               <Bar 
-                data={barData()} 
+                data={barData()!} 
                 options={{ maintainAspectRatio: false, scales: { y: { beginAtZero: true, grid: { color: '#334155' } }, x: { grid: { display: false } } } }} 
               />
             </div>
